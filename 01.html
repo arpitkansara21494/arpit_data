@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="01.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -12,17 +12,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap"
-      rel="stylesheet"
-    />
+
     <!--load all styles -->
     <title>Document</title>
   </head>
   <body>
-    <header class="header">
+    <!-- <header class="header">
       <div class="container">
         <div class="row justify alighn">
           <div class="col">
@@ -48,7 +43,33 @@
           </div>
         </div>
       </div>
+    </header> -->
+    <header>
+      <div class="container">
+        <div class="row justify alighn">
+          <div class="col">
+            <div class="logo">
+              <h1>logo</h1>
+            </div>
+          </div>
+          <div class="col">
+            <div class="header-text" id="menu">
+              <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
+    <div class="toggle-btn z100" onclick="myfunction();">
+      <div><i class="fa-solid fa-bars"></i></div>
+    </div>
     <!-- section 1 start -->
     <section class="section-1">
       <div class="container">
@@ -264,5 +285,16 @@
         </div>
       </div>
     </footer>
+    <script type="text/javascript">
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+
+      function myfunction() {
+        var menutext = document.getElementById("menu");
+        menutext.classList.toggle("show");
+      }
+    </script>
   </body>
 </html>
