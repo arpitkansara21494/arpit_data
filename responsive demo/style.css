@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Delicious Handrawn', cursive;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+}
+
+.col-50 {
+    width: 50%;
+}
+
+.col-33 {
+    width: 30%;
+}
+
+.col-100 {
+    width: 100%;
+}
+
+.txt-al {
+    text-align: center;
+}
+
+.col-30 {
+    width: 30%;
+    margin: 0 auto;
+}
+
+.col-20 {
+    width: 20%;
+}
+
+.col-25 {
+    width: 25%;
+}
+
+.m-a {
+    margin: 100px 0;
+}
+
+.d-f {
+    display: flex;
+}
+
+.justify {
+    justify-content: space-between;
+}
+
+.alighn {
+    align-items: center;
+}
+
+
+.header {
+    background-color: steelblue;
+}
+
+.header-txt a {
+    color: white;
+    text-transform: uppercase;
+    padding: 15px;
+}
+
+.header-txt ul li {
+    display: inline-block;
+}
+
+.fa-house {
+    color: aqua;
+}
+
+.header-icon a {
+    color: rgb(176, 239, 50);
+    padding: 9px
+}
+
+.section-1 {
+    background-image: url(../PSD-TASK/anita-austvika-I2qiyYuM7pA-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.c-50-txt {
+    margin: 100px 0;
+    padding: 100px 0;
+}
+
+.c-50-txt h2 {
+    color: teal;
+    margin: 20px 0;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.c-50-txt p {
+    width: 80%;
+    /* margin: 0 auto; */
+    font-size: 20px;
+
+}
+
+.c-50-txt button {
+    padding: 5px 40px;
+    border: none;
+    margin: 40px 0;
+    font-size: 20px;
+    color: brown;
+}
+
+.sec-3-img img {
+    width: 100%;
+}
+
+.sec-3-txt {
+    margin: 100px 0;
+    padding: 20px;
+}
+
+.sec-3-txt p {
+    font-size: 20px;
+
+}
+
+.sec-3-txt h2 {
+    font-size: 20px;
+    margin: 20px 0;
+    text-transform: uppercase;
+}
+
+.sec-3-btn button {
+    padding: 10px 50px;
+    border-radius: 10% 10%;
+    border: none;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 5s;
+}
+
+@keyframes example {
+    from {
+        background-color: blue;
+    }
+
+    to {
+        background-color: yellow;
+    }
+}
+
+.sec-3-heading {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.sec-3-cntn img {
+    width: 100%;
+}
+
+.sec-4-img img {
+    width: 100%;
+}
+
+.sec-4-txt {
+    margin: 100px 0;
+    padding: 100px 0;
+}
+
+.sec-4-txt p {
+    margin: 20px 0;
+    font-size: 30px;
+}
+
+.sec-4-h2 {
+    color: aquamarine;
+    font-size: 35px;
+
+}
+
+.sec-4-btn button {
+    padding: 10px 40px;
+    margin: 20px 0;
+}
+
+.ps-img img {
+    width: 100%;
+}
+
+/* footer-1 */
+
+/* 
+.ftr-logo img {
+    width: 180px;
+}
+
+.ftr {
+    background-color: burlywood;
+}
+
+.mrg {
+    padding: 50px 0;
+}
+
+.ftr-menu ul li {
+    padding: 20px 0;
+} */
+
+/* footer-1 complete */
+
+/* footer-2 */
+.ftr-2 {
+    background-color: antiquewhite;
+
+}
+
+.ftr-txt {
+    margin: 100px 0;
+}
+
+.ftr-txt p {
+    font-size: 30px;
+    margin: 15px 0;
+}
+
+.ftr-txt input {
+    padding: 10px 20px;
+    margin: 20px 0;
+}
+
+.txt {
+    margin: 100px 0;
+}
+
+/* 
+/* footer-2 complete */
+@media(max-width:1190px) {
+    .container {
+        width: 90%;
+    }
+
+}
+
+@media(max-width:1045px) {
+    .ftr-txt p {
+        font-size: 20px;
+
+    }
+
+    .ftr-txt {
+        margin: 30px 0;
+    }
+
+    .m-a {
+        margin: 30px 0;
+    }
+
+}
+
+@media(max-width:1441px) {
+    .sec-4 {
+        margin: 20px 0;
+    }
+}
+
+@media(max-width:768px) {
+    .sec-4-txt {
+        margin: 20px 0;
+    }
+}
+
+@media(max-width:500px) {
+    .row {
+        flex-wrap: wrap;
+    }
+
+    .col-30 {
+        width: 45%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .col-50 {
+        width: 100%;
+    }
+
+    .ftr-txt {
+        margin: 20px 0;
+    }
+
+    .m-a {
+        margin: 10px 0;
+    }
+}
